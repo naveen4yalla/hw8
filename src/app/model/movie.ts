@@ -1,0 +1,14 @@
+export interface Weather {
+  trending_movies?: (TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity)[] | null;
+  top_rated_movies?: (TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity)[] | null;
+  currently_playing_movies?: (TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity)[] | null;
+  popular_movies?: (TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity)[] | null;
+  trending_tv?: (TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity)[] | null;
+  top_rated_tv?: (TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity)[] | null;
+  popular_tv?: (TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity)[] | null;
+}
+export interface TrendingMoviesEntityOrTopRatedMoviesEntityOrCurrentlyPlayingMoviesEntityOrPopularMoviesEntityOrTrendingTvEntityOrTopRatedTvEntityOrPopularTvEntity {
+  id: number;
+  poster_path: string;
+  name: string;
+}

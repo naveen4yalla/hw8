@@ -1,0 +1,17 @@
+#cust-home-main-carousel{
+    overflow: hidden;
+    display: inline-block;
+}
+#cust-home-main-carouselimg {
+    display: block;
+    transition: transform .4s;   /* smoother zoom */
+  }
+#cust-home-main-carousel:hover img {
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+  }
+  #cust-home-main-carousel-caption{  
+      display:none}
+  #cust-home-main-carousel:hover #cust-home-main-carousel-caption{
+      display:block
+  }
