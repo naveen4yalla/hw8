@@ -28,15 +28,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     
-    // this.TmdbCallService.getMainCarousel().subscribe(
-    //   (user: any) => {
-    //     console.log(user);
+    this.TmdbCallService.getMainCarousel().subscribe(
+      (user: any) => {
+        console.log(user);
        
-    //   },
-    //   (err) => {
-    //    console.log("error message"+err)
-    //   },
-    // );
+      },
+      (err) => {
+       console.log("error message"+err)
+      },
+    );
     // this.TmdbCallService.getPopularMovies().subscribe();
     // this.TmdbCallService.getTrendingMovies().subscribe();
     // this.TmdbCallService.getTopratedMovies().subscribe();
